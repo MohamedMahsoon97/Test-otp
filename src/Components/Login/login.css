@@ -1,0 +1,342 @@
+.login-container{
+    display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.add-new-account{
+	animation-name: fadeSec;
+	animation-duration: .4s;
+	animation-timing-function: ease-in-out;
+	margin-top: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    flex-direction: column;
+	min-height: calc(100vh - 130px);
+	overflow: hidden;
+	background-color: #F4F2E9;
+	position: relative;
+}
+.add-new-account-content {
+	width: 30%;
+	min-height: 60vh;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	padding: 10px 30px 10px;
+	margin: 20px 0px;
+	background-color: #fff;
+	border-radius: 20px;
+	border: 1px solid #eee;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	-ms-border-radius: 20px;
+	-o-border-radius: 20px;
+}
+.add-new-account-content h4 {
+    margin: 20px 0px;
+    font-size: var(--h1-font-size);
+}
+.add-new-account-content .row {
+    width: 100%;
+}
+.add-new-account-content form > div{
+    margin-bottom: 20px;
+}
+.add-new-account-content input{
+    padding: 15px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border: 1px solid #aaa;
+    width: 100%;
+}
+/* .add-new-account-content input:focus ~ label {
+	right: -54px;
+} */
+.add-new-account-content .form-floating input ~ label{
+    right: -54px;
+}
+.add-new-account-content .force-country input ~ label{
+	position: absolute;
+    right: -54px !important;
+}
+.form-phone-number{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.form-phone-number > .row{
+	width: 100%;
+}
+.defaultCountry-kw-code{
+	/* width: 14%; */
+	height: 60px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+	border: 1.5px solid #ced4da;
+	border-radius: 8px;
+	padding: 5px;
+	/* margin-right: 10px; */
+}
+.defaultCountry-kw-code:hover{
+	cursor: not-allowed;
+}
+.defaultCountry-kw-code span{
+	font-size: var(--normal-font-size);
+	font-weight: 600;
+}
+.defaultCountry-kw-inp{
+	position: relative;
+	width: 100%;
+	height: 50px;
+	/* margin: 10px; */
+}
+#kw-inp-left{
+	margin-left: 10px;
+}
+#kw-inp-right{
+	margin-right: 10px;
+}
+.defaultCountry-kw-inp input{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	border-radius: 8px;
+	border: 1.5px solid #ced4da;
+	padding: 20px;
+	color: #545453;
+}
+.defaultCountry-kw-inp input:focus{
+	outline: none;
+}
+.form-floating input:focus ~ label{
+	display: none;
+	padding-top: 0px;
+}
+.defaultCountry-kw-inp input:focus ~ label{
+	display: none;
+}
+.defaultCountry-kw-inp label{
+	position: absolute;
+	right: 12px;
+	width: 60%;
+	top: 5px;
+	color: #aaa;
+	transition: 0.3s;
+	z-index: 1;
+	letter-spacing: 0.2px;
+	text-align: right;
+	font-size: var(--small-font-size);
+}
+
+.form-phone-number input:focus ~ label {
+	/* right: 25px; */
+}
+.add-new-account-btn{
+    width: 100%;
+	height: 50px;
+	margin: 0px 0px 0px;
+	border-radius: 10px;
+	background-color: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.add-new-account-btn h3 {
+	color: #fff;
+	font-size: 18px;
+	margin: 0px 5px;
+}
+.add-new-account-btn svg path {
+	fill: #fff;
+}
+
+.have-account{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 20px;
+      /* margin-top: 30px; */
+}
+.have-account > h4{
+    font-size: var(--normal-font-size);
+	margin-bottom: 0px;
+}
+.have-account-btn{
+	color: var(--first-color);
+	margin: 0px 10px;
+	cursor: pointer;
+}
+.have-account-btn a{
+	color: var(--first-color) !important;
+	text-decoration: none !important;
+}
+@keyframes fadeSec {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.add-new-account-loading{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	/* position: absolute; */
+	z-index: 99;
+	background-color: #fff;
+	/* width: 40px; */
+	height: 50px;
+	/* margin-top: 140px; */
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+}
+
+
+@media screen and (max-width : 1324px){
+	.add-new-account-content {
+		width: 60%;
+		min-height: 450px;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+		margin: 20px 30px;
+	}
+}
+@media screen and (max-width : 1024px){
+	.add-new-account-content {
+		width: 60%;
+		min-height: 450px;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+		margin: 20px 30px;
+	}
+}
+@media screen and (max-width : 991px){
+	.add-new-account {
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		flex-direction: column;
+		min-height: 700px;
+		overflow: hidden;
+		background-color: #F4F2E9;
+		position: relative;
+		margin-top: 30px;
+		padding-top: 30px;
+	}
+	.add-new-account-content {
+		width: 90%;
+		min-height: 450px;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+		margin: 20px 30px;
+	}
+	.add-new-account-content h6{
+		margin: 20px 0px;
+		/* font-weight: 600; */
+		font-size: var(--h1-font-size);
+	}
+	.add-new-account-content > form{
+		display: flex;
+		flex-flow: row wrap;
+	}
+	/* .add-new-account-content > form > div{
+		width: 46%;
+		margin: 10px !important;
+	} */
+	.add-new-account-content > form > div:nth-child(5){
+		width: 100%;
+	}
+	.add-new-account-btn {
+		font-size: var(--h1-font-size);
+		height: 60px;
+		margin: 30px 0px 20px;
+	}
+	.add-new-account-content input:focus ~ label {
+		right: -40px;
+	}
+	/* .add-new-account-content .form-floating input ~ label{
+		right: 0px;
+	} */
+	.add-new-account-content .force-country input ~ label{
+		position: absolute;
+		right: -40px !important;
+	}
+}
+@media screen and (max-width : 767px){
+	.add-new-account {
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		flex-direction: column;
+		min-height: 900px;
+		overflow: hidden;
+		background-color: #F4F2E9;
+		position: relative;
+		margin-top: 30px;
+		padding-top: 30px;
+	}
+	.add-new-account-content {
+		width: 90%;
+		min-height: 500px;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+		padding: 0px 10px;
+	}
+	.add-new-account-content h6{
+		margin: 20px 0px;
+		font-size: var(--h3-font-size);
+	}
+	.add-new-account-content > form > div{
+		width: 100%;
+	}
+	.add-new-account-content input {
+		padding: 12px;
+		font-size: var(--normal-font-size);
+	}
+	.defaultCountry-kw-code {
+		height: 60px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		border: 1.5px solid #ced4da;
+		border-radius: 8px;
+		padding: 5px;
+	}
+	.defaultCountry-kw-inp {
+		position: relative;
+		/* width: 78%; */
+		height: 60px;
+	}
+	.add-new-account-content > form > div:nth-child(5){
+		width: 100%;
+	}
+	/* .add-new-account-content > form > div{
+		margin-bottom: 15px !important;
+	} */
+	.add-new-account-btn {
+		margin: 0px 0px 0px;
+	}
+}
